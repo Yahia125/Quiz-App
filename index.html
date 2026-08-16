@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Quiz "IQ TEST"</h1>
+    </header>
+
+    <main>
+        <div class="main-card">
+            <h3 class="num-of-question" id="questions-number">Question <span id="num-of-question">1</span> of 15</h3>
+            <!-- Question 1 -->
+            <div id="question1">
+                <h5 class="question">What number comes next? 2, 6, 12, 20, 30, 42, ?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">54</button>
+                    <button class="choice" onclick="answer(this)">56</button>
+                    <button class="choice" onclick="answer(this)">58</button>
+                    <button class="choice" onclick="answer(this)">60</button>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="non-display" id="question2">
+                <h5 class="question">What number comes next? 3, 8, 15, 24, 35, 48, ?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">61</button>
+                    <button class="choice" onclick="answer(this)">63</button>
+                    <button class="choice" onclick="answer(this)">65</button>
+                    <button class="choice" onclick="answer(this)">67</button>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="non-display" id="question3">
+                <h5 class="question">What number comes next? 1, 2, 6, 24, 120, ?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">480</button>
+                    <button class="choice" onclick="answer(this)">600</button>
+                    <button class="choice" onclick="answer(this)">720</button>
+                    <button class="choice" onclick="answer(this)">840</button>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="non-display" id="question4">
+                <h5 class="question">What number comes next? 2, 5, 11, 23, 47, ?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">93</button>
+                    <button class="choice" onclick="answer(this)">95</button>
+                    <button class="choice" onclick="answer(this)">97</button>
+                    <button class="choice" onclick="answer(this)">99</button>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="non-display" id="question5">
+                <h5 class="question">Find the missing number: 4 → 18, 6 → 38, 8 → 66, 10 → ?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">98</button>
+                    <button class="choice" onclick="answer(this)">100</button>
+                    <button class="choice" onclick="answer(this)">102</button>
+                    <button class="choice" onclick="answer(this)">104</button>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="non-display" id="question6">
+                <h5 class="question">What number should replace the question mark? 3, 7, 15, 31, 63, ?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">125</button>
+                    <button class="choice" onclick="answer(this)">127</button>
+                    <button class="choice" onclick="answer(this)">129</button>
+                    <button class="choice" onclick="answer(this)">131</button>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="non-display" id="question7">
+                <h5 class="question">Which number does not belong? 16, 25, 36, 49, 63, 81</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">36</button>
+                    <button class="choice" onclick="answer(this)">49</button>
+                    <button class="choice" onclick="answer(this)">63</button>
+                    <button class="choice" onclick="answer(this)">81</button>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="non-display" id="question8">
+                <h5 class="question">If A = 1, B = 2, ..., Z = 26, what is the value of LOGIC?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">48</button>
+                    <button class="choice" onclick="answer(this)">50</button>
+                    <button class="choice" onclick="answer(this)">52</button>
+                    <button class="choice" onclick="answer(this)">54</button>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="non-display" id="question9">
+                <h5 class="question">A sequence follows this rule: each number is multiplied by 2, then 1 is added, then multiplied by 2, then 2 is added, then multiplied by 2, then 3 is added. Starting with 3, what is the next number?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">53</button>
+                    <button class="choice" onclick="answer(this)">55</button>
+                    <button class="choice" onclick="answer(this)">57</button>
+                    <button class="choice" onclick="answer(this)">59</button>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="non-display" id="question10">
+                <h5 class="question">What number is missing? 2, 9, 28, 65, 126, ?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">196</button>
+                    <button class="choice" onclick="answer(this)">217</button>
+                    <button class="choice" onclick="answer(this)">225</button>
+                    <button class="choice" onclick="answer(this)">243</button>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="non-display" id="question11">
+                <h5 class="question">If all Norks are Vels, no Vels are Tars, and some Tars are Mips, which statement must be true?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">No Norks are Tars</button>
+                    <button class="choice" onclick="answer(this)">Some Norks are Mips</button>
+                    <button class="choice" onclick="answer(this)">All Mips are Tars</button>
+                    <button class="choice" onclick="answer(this)">Some Vels are Tars</button>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="non-display" id="question12">
+                <h5 class="question">A code transforms 2 → 6, 3 → 12, 4 → 20, 5 → 30. What does 12 become?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">132</button>
+                    <button class="choice" onclick="answer(this)">144</button>
+                    <button class="choice" onclick="answer(this)">156</button>
+                    <button class="choice" onclick="answer(this)">168</button>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="non-display" id="question13">
+                <h5 class="question">What number comes next? 1, 11, 21, 1211, 111221, ?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">312211</button>
+                    <button class="choice" onclick="answer(this)">311221</button>
+                    <button class="choice" onclick="answer(this)">212211</button>
+                    <button class="choice" onclick="answer(this)">321121</button>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="non-display" id="question14">
+                <h5 class="question">Five people A, B, C, D and E stand in a line. A is before B. C is after D. E is before A. Which person must be first?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">A</button>
+                    <button class="choice" onclick="answer(this)">B</button>
+                    <button class="choice" onclick="answer(this)">D</button>
+                    <button class="choice" onclick="answer(this)">E</button>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="non-display" id="question15">
+                <h5 class="question">What number should replace the question mark? 1, 2, 6, 15, 31, 56, ?</h5>
+                <div class="all-choices">
+                    <button class="choice" onclick="answer(this)">82</button>
+                    <button class="choice" onclick="answer(this)">87</button>
+                    <button class="choice" onclick="answer(this)">92</button>
+                    <button class="choice" onclick="answer(this)">98</button>
+                </div>
+            </div>
+
+            <!-- The Result -->
+            <div class="non-display" id="result">
+                <h2>Quiz Completed!</h2>
+
+                <div class="result-score">
+                    <span>Your Score</span>
+                    <h1 id="score">12 / 15</h1>
+                </div>
+
+                <div class="result-details">
+                    <p>Correct Answers: <span id="correct">12</span></p>
+                    <p>Wrong Answers: <span id="wrong">3</span></p>
+                    <p>Accuracy: <span>80%</span></p>
+                </div>
+
+                <h3 class="result-message">Excellent! 🧠</h3>
+
+                <button class="restart" onclick="tryAgain()">Try Again</button>                
+            </div>
+            <button class="next-btn" onclick="nextQuestion()" id="next-btn">Next</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
