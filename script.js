@@ -1,5 +1,3 @@
-// Quiz App
-
 let numOfQuestion = Number(document.getElementById("num-of-question").textContent);
 const nextBtn = document.getElementById("next-btn");
 const score = document.getElementById("score");
